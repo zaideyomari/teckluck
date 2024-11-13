@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Luck shop- Contactos</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" href="assets/img/apple-icon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/templatemo.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
+
+    <!-- Load fonts style after rendering the layout styles -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap">
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+
+    <!-- Load map styles -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="" />
+<!--
+    
+TemplateMo 559 Zay Shop
+
+https://templatemo.com/tm-559-zay-shop
+
+-->
+</head>
+
+<body>
+    <!-- Start Top Nav -->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-light d-none d-lg-block" id="templatemo_nav_top">
+        <div class="container text-light">
+            <div class="w-100 d-flex justify-content-between">
+                <div>
+                    <i class="fa fa-envelope mx-2"></i>
+                    <a class="navbar-sm-brand text-light text-decoration-none" href="mailto:info@company.com">luck@company.com</a>
+                    <i class="fa fa-phone mx-2"></i>
+                    <a class="navbar-sm-brand text-light text-decoration-none" href="tel:010-020-0340"></a>
+                </div>
+                <div>
+                    <a class="text-light" href="https://www.facebook.com/profile.php?id=61565803711029&mibextid=kFxxJD" target="_blank" rel="sponsored"><i class="fab fa-facebook-f fa-sm fa-fw me-2"></i></a>
+                    <a class="text-light" href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram fa-sm fa-fw me-2"></i></a>
+                    <a class="text-light" href="https://twitter.com/" target="_blank"><i class="fab fa-twitter fa-sm fa-fw me-2"></i></a>
+                    <a class="text-light" href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin fa-sm fa-fw"></i></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Close Top Nav -->
+
+
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg navbar-light shadow">
+        <div class="container d-flex justify-content-between align-items-center">
+
+            <a class="navbar-brand text-success logo h1 align-self-center" href="index.html">
+                luck
+            </a>
+
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#templatemo_main_nav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="align-self-center collapse navbar-collapse flex-fill  d-lg-flex justify-content-lg-between" id="templatemo_main_nav">
+                <div class="flex-fill">
+                    <ul class="nav navbar-nav d-flex justify-content-between mx-lg-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">INICIO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">INFORMACION</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="shop.html">TIENDA</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">CONTACTOS </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="formulario.html">REGISTROS</a>
+                        </li> 
+                    </ul>
+                </div>
+                <!DOCTYPE html>
+                <html lang="es">
+                <head>
+                    <meta charset="UTF-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>Buscar Imágenes de Google</title>
+                    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+                    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+                    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+                    <style>
+                        /* Barra de navegación fija */
+                        .navbar {
+                            position: fixed;
+                            top: 0;
+                            left: 0;
+                            right: 0;
+                            z-index: 1030;
+                            background-color: #fff;
+                        }
+                
+                        /* Ajuste para evitar que el contenido quede cubierto por la barra de navegación */
+                        body {
+                            padding-top: 70px;
+                        }
+                
+                        /* Estilo de las imágenes */
+                        .img-fluid {
+                            max-height: 300px;
+                            object-fit: cover;
+                        }
+                    </style>
+                </head>
+                <body>
+                
+                    <!-- Barra de Navegación -->
+                    <div class="navbar align-self-center d-flex">
+                        <div class="d-lg-none flex-sm-fill mt-3 mb-4 col-7 col-sm-auto pr-3">
+                            <div class="input-group">
+                                <input type="text" class="form-control" id="inputMobileSearch" placeholder="Buscar imágenes...">
+                                <div class="input-group-text" onclick="realizarBusqueda(event)">
+                                    <i class="fa fa-fw fa-search"></i>
+                                </div>
+                            </div>
+                        </div>
+                
+                        <!-- Ícono de búsqueda para escritorio -->
+                        <a class="nav-icon d-none d-lg-inline" href="#" data-bs-toggle="modal" data-bs-target="#searchModal">
+                            <i class="fa fa-fw fa-search text-dark mr-2"></i>
+                        </a>
+                    </div>
+                
+                    <!-- Modal de Búsqueda -->
+                    <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true" data-bs-backdrop="static">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="searchModalLabel">Buscar Imágenes</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <input type="text" class="form-control" id="searchInput" placeholder="Buscar imágenes...">
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                    <button type="button" class="btn btn-primary" onclick="realizarBusqueda()">Buscar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <!-- Contenedor de la búsqueda de Google -->
+                    <div class="container mt-5">
+                        <div class="gcse-search"></div>
+                    </div>
+                
+                    <!-- Cargar el script de Google Custom Search -->
+                    <script async src="https://cse.google.com/cse.js?cx=7460304a63df240c5"></script>
+                </body>
+                </html>
+                
+                        </div>
+                    </div>
+                    <a class="nav-icon d-none d-lg-inline" href="#" data-bs-toggle="modal" data-bs-target="#templatemo_search">
+                        <i class="fa fa-fw fa-search text-dark mr-2"></i>
+                    </a>
+                    <a class="nav-icon position-relative text-decoration-none" href="#">
+                        <i class="fa fa-fw fa-cart-arrow-down text-dark mr-1"></i>
+                        <span class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark">7</span>
+                    </a>
+                    <a class="nav-icon position-relative text-decoration-none" href="#">
+                        <i class="fa fa-fw fa-user text-dark mr-3"></i>
+                        <span class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark">+99</span>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+    <!-- Close Header -->
+
+    <!-- Modal -->
+    <div class="modal fade bg-white" id="templatemo_search" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="w-100 pt-1 mb-5 text-right">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form action="" method="get" class="modal-content modal-body border-0 p-0">
+                <div class="input-group mb-2">
+                    <input type="text" class="form-control" id="inputModalSearch" name="q" placeholder="Search ...">
+                    <button type="submit" class="input-group-text bg-success text-light">
+                        <i class="fa fa-fw fa-search text-white"></i>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+    <!-- Start Content Page -->
+    <div class="container-fluid bg-light py-5">
+        <div class="col-md-6 m-auto text-center">
+            <h1 class="h1">CONTÁCTENOS </h1>
+            <p>
+              Para más información o envios contáctenos, y llene todo los datos que le pide porfavor. 
+            </p>
+        </div>
+    </div>
+
+    <!-- Start Map -->
+   <!-- Contenedor del mapa -->
+<div id="map" style="height: 500px; width: 100%;"></div>
+
+<!-- Script para cargar OpenStreetMap con Leaflet -->
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script>
+  // Coordenadas de El Alto, Bolivia, a partir del Plus Code FQWC+JX3
+  var map = L.map('map').setView([-16.5000, -68.1193], 15); // Coordenadas de El Alto
+
+  // Añadir la capa de OpenStreetMap
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+  }).addTo(map);
+
+  // Añadir un marcador en la ubicación FQWC+JX3 (El Alto, Bolivia)
+  L.marker([-16.5000, -68.1193]).addTo(map)
+    .bindPopup('<strong>16 de Febrero - B</strong><br>Ubicación: FQWC+JX3, El Alto, Bolivia')
+    .openPopup();
+</script>
+
+    <!-- Ena Map -->
+
+   <!-- Start Contact -->
+<!-- Start Contact -->
+<div class="container py-5">
+    <div class="row py-5">
+        <form class="col-md-9 m-auto" method="post" role="form" id="contact-form">
+            <div class="row">
+                <div class="form-group col-md-6 mb-3">
+                    <label for="inputname">Nombre</label>
+                    <input type="text" class="form-control mt-1" id="name" name="name" placeholder="Nombre" required>
+                </div>
+                <div class="form-group col-md-6 mb-3">
+                    <label for="inputemail">Correo Electrónico</label>
+                    <input type="email" class="form-control mt-1" id="email" name="email" placeholder="Correo Electrónico" required>
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="inputsubject">Asunto</label>
+                <input type="text" class="form-control mt-1" id="subject" name="subject" placeholder="Asunto" required>
+            </div>
+            <div class="mb-3">
+                <label for="inputmessage">Mensaje</label>
+                <textarea class="form-control mt-1" id="message" name="message" placeholder="Mensaje" rows="8" required></textarea>
+            </div>
+            <div class="row">
+                <div class="col text-end mt-2">
+                    <button type="submit" class="btn btn-primary btn-lg px-3" id="submitBtn">Enviar</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<!-- End Contact -->
+
+<!-- Estilos añadidos dentro de la etiqueta <style> -->
+<style>
+    /* Estilo del formulario */
+    #contact-form {
+        background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%); /* Gradiente vibrante */
+        padding: 40px;
+        border-radius: 10px;
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2); /* Sombra profunda */
+        color: #fff;
+    }
+
+    /* Estilo de las etiquetas */
+    #contact-form label {
+        font-weight: 600;
+        font-size: 18px;
+        margin-bottom: 8px;
+    }
+
+    /* Estilo de los campos de texto */
+    #contact-form input, #contact-form textarea {
+        border-radius: 8px;
+        border: none;
+        padding: 12px;
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+
+    /* Estilo al enfocarse en los campos de texto */
+    #contact-form input:focus, #contact-form textarea:focus {
+        outline: none;
+        border: 2px solid #ff6f61; /* Rojo vibrante en el borde */
+        box-shadow: 0 0 10px rgba(255, 111, 97, 0.5); /* Sombra con color rojo */
+    }
+
+    /* Estilo del botón de enviar */
+    #submitBtn {
+        background: #ff6f61; /* Rojo vibrante */
+        color: white;
+        border: none;
+        border-radius: 30px;
+        font-size: 18px;
+        padding: 15px 30px;
+        transition: background 0.3s ease-in-out;
+    }
+
+    #submitBtn:hover {
+        background: #e14e44; /* Rojo oscuro al pasar el ratón */
+        transform: scale(1.05); /* Efecto de zoom */
+    }
+
+    /* Estilo para mejorar la experiencia visual */
+    .form-control {
+        background: #fff;
+        color: #333;
+        font-size: 16px;
+        padding: 12px;
+        border-radius: 8px;
+        border: 2px solid #fff;
+        transition: border 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .form-control:focus {
+        border-color: #ff6f61; /* Rojo al enfocarse */
+        box-shadow: 0 0 8px rgba(255, 111, 97, 0.5);
+    }
+
+    /* Añadir un pequeño efecto de hover al formulario */
+    #contact-form input, #contact-form textarea, #submitBtn {
+        transition: all 0.3s ease;
+    }
+
+    #contact-form input:hover, #contact-form textarea:hover, #submitBtn:hover {
+        transform: translateY(-3px); /* Efecto de elevarse ligeramente */
+    }
+</style>
+
+<!-- End Contact -->
+
+   <!-- Start Footer -->
+   <footer class="bg-dark" id="tempaltemo_footer">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-4 pt-5">
+                <h2 class="h2 text-success border-bottom pb-3 border-light logo">web texluck</h2>
+                <ul class="list-unstyled text-light footer-link-list">
+                    <li>
+                        <i class="fas fa-map-marker-alt fa-fw"></i>
+                        La Paz-El ALto Av. Santa fe Zona 16 de Febrero 
+                    </li>
+                    <li>
+                        <i class="fa fa-phone fa-fw"></i>
+                        <a class="text-decoration-none" href="tel:010-020-0340">64120667</a>
+                    </li>
+                    <li>
+                        <i class="fa fa-envelope fa-fw"></i>
+                        <a class="text-decoration-none" href="https://mail.google.com/mail/u/0/?hl=es#inbox">sinfo3407@gmail.com</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-md-4 pt-5">
+                <h2 class="h2 text-light border-bottom pb-3 border-light">Productos</h2>
+                <ul class="list-unstyled text-light footer-link-list">
+                    <li><a class="text-decoration-none" href="#">ACCESORIOS </a></li>
+                    <li><a class="text-decoration-none" href="#">ROPA DEPORTIVA</a></li>
+                    <li><a class="text-decoration-none" href="#">ZAPATOS PARA VARON</a></li>
+                    <li><a class="text-decoration-none" href="#">ZAPATOS PARA MUJER</a></li>
+                    <li><a class="text-decoration-none" href="#">ROPA POPULAR</a></li>
+                    <li><a class="text-decoration-none" href="#">ACCESORIOS PARA EL GYM</a></li>
+                    <li><a class="text-decoration-none" href="#">ZAPATILLAS DEPORTIVAS</a></li>
+                </ul>
+            </div>
+
+            <div class="col-md-4 pt-5">
+                <h2 class="h2 text-light border-bottom pb-3 border-light">MÁS INFORMACIÓN</h2>
+                <ul class="list-unstyled text-light footer-link-list">
+                    <li><a class="text-decoration-none" href="#">SOBRE NOSOTROS</a></li>
+                    <li><a class="text-decoration-none" href="#">PREGUNTAS FRECUENTES </a></li>
+                    <li><a class="text-decoration-none" href="#">CONTACTO</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="row text-light mb-4">
+            <div class="col-12 mb-3">
+                <div class="w-100 my-3 border-top border-light"></div>
+            </div>
+            <div class="col-auto me-auto">
+                <ul class="list-inline text-left footer-icons">
+                    <li class="list-inline-item border border-light rounded-circle text-center">
+                        <a class="text-light text-decoration-none" target="_blank" href="https://www.facebook.com/profile.php?id=61565803711029"><i class="fab fa-facebook-f fa-lg fa-fw"></i></a>
+                    </li>
+                    <li class="list-inline-item border border-light rounded-circle text-center">
+                        <a class="text-light text-decoration-none" target="_blank" href="https://www.instagram.com/"><i class="fab fa-instagram fa-lg fa-fw"></i></a>
+                    </li>
+                    <li class="list-inline-item border border-light rounded-circle text-center">
+                        <a class="text-light text-decoration-none" target="_blank" href="https://twitter.com/"><i class="fab fa-twitter fa-lg fa-fw"></i></a>
+                    </li>
+                    <li class="list-inline-item border border-light rounded-circle text-center">
+                        <a class="text-light text-decoration-none" target="_blank" href="https://www.linkedin.com/"><i class="fab fa-linkedin fa-lg fa-fw"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-auto">
+                <label class="sr-only" for="subscribeEmail">EMAIL</label>
+                <div class="input-group mb-2">
+                    <input type="text" class="form-control bg-dark border-light" id="subscribeEmail" placeholder="Email address">
+                    <div class="input-group-text btn-success text-light">ESCRIBEMOS AL EMAIL</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w-100 bg-black py-3">
+        <div class="container">
+            <div class="row pt-2">
+                <div class="col-12">
+                    <p class="text-left text-light">
+                         &copy; 2024 
+                        | Designed by <a rel="sponsored" href="https://gamma.app/docs/Copy-of-Teckluck-La-Boutique-de-Ropa-Online-3hz4zbnyxzdee4a" target="_blank">Teckluck</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</footer>
+<!-- End Footer -->
+
+<!-- Start Script -->
+<script src="assets/js/jquery-1.11.0.min.js"></script>
+<script src="assets/js/jquery-migrate-1.2.1.min.js"></script>
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/templatemo.js"></script>
+<script src="assets/js/custom.js"></script>
+<!-- End Script -->
+</body>
+
+</html>

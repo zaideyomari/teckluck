@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Luck shop Template</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" href="assets/img/apple-icon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/templatemo.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
+
+    <!-- Load fonts style after rendering the layout styles -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap">
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+<!--
+    
+TemplateMo 559 Luck Shop
+
+https://templatemo.com/tm-559-zay-shop
+
+-->
+</head>
+
+<body>
+    <!-- Start Top Nav -->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-light d-none d-lg-block" id="templatemo_nav_top">
+        <div class="container text-light">
+            <div class="w-100 d-flex justify-content-between">
+                <div>
+                    <i class="fa fa-envelope mx-2"></i>
+                    <a class="navbar-sm-brand text-light text-decoration-none" href="mailto:info@company.com">info@company.com</a>
+                    <i class="fa fa-phone mx-2"></i>
+                    <a class="navbar-sm-brand text-light text-decoration-none" href="tel:64120667">64120667</a>
+                </div>
+                <div>
+                    <a class="text-light" href="https://www.facebook.com/profile.php?id=61565803711029&mibextid=kFxxJD" target="_blank" rel="sponsored"><i class="fab fa-facebook-f fa-sm fa-fw me-2"></i></a>
+                    <a class="text-light" href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram fa-sm fa-fw me-2"></i></a>
+                    <a class="text-light" href="https://twitter.com/" target="_blank"><i class="fab fa-twitter fa-sm fa-fw me-2"></i></a>
+                    <a class="text-light" href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin fa-sm fa-fw"></i></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Close Top Nav -->
+
+
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg navbar-light shadow">
+        <div class="container d-flex justify-content-between align-items-center">
+
+            <a class="navbar-brand text-success logo h1 align-self-center" href="index.html">
+                Luck 
+            </a>
+
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#templatemo_main_nav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="align-self-center collapse navbar-collapse flex-fill  d-lg-flex justify-content-lg-between" id="templatemo_main_nav">
+                <div class="flex-fill">
+                    <ul class="nav navbar-nav d-flex justify-content-between mx-lg-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">INICIO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">INFORMACION</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="shop.html">TIENDA</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">CONTACTO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="formulario.html">REGISTRO</a>
+                        </li>    
+                    </ul>
+                </div>
+                <!DOCTYPE html>
+                <html lang="es">
+                <head>
+                    <meta charset="UTF-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>Buscar Imágenes de Google</title>
+                    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+                    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+                    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+                    <style>
+                        /* Barra de navegación fija */
+                        .navbar {
+                            position: fixed;
+                            top: 0;
+                            left: 0;
+                            right: 0;
+                            z-index: 1030;
+                            background-color: #fff;
+                        }
+                
+                        /* Ajuste para evitar que el contenido quede cubierto por la barra de navegación */
+                        body {
+                            padding-top: 70px;
+                        }
+                
+                        /* Estilo de las imágenes */
+                        .img-fluid {
+                            max-height: 300px;
+                            object-fit: cover;
+                        }
+                    </style>
+                </head>
+                <body>
+                
+                    <!-- Barra de Navegación -->
+                    <div class="navbar align-self-center d-flex">
+                        <div class="d-lg-none flex-sm-fill mt-3 mb-4 col-7 col-sm-auto pr-3">
+                            <div class="input-group">
+                                <input type="text" class="form-control" id="inputMobileSearch" placeholder="Buscar imágenes...">
+                                <div class="input-group-text" onclick="realizarBusqueda(event)">
+                                    <i class="fa fa-fw fa-search"></i>
+                                </div>
+                            </div>
+                        </div>
+                
+                        <!-- Ícono de búsqueda para escritorio -->
+                        <a class="nav-icon d-none d-lg-inline" href="#" data-bs-toggle="modal" data-bs-target="#searchModal">
+                            <i class="fa fa-fw fa-search text-dark mr-2"></i>
+                        </a>
+                    </div>
+                
+                    <!-- Modal de Búsqueda -->
+                    <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true" data-bs-backdrop="static">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="searchModalLabel">Buscar Imágenes</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <input type="text" class="form-control" id="searchInput" placeholder="Buscar imágenes...">
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                    <button type="button" class="btn btn-primary" onclick="realizarBusqueda()">Buscar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <!-- Contenedor de la búsqueda de Google -->
+                    <div class="container mt-5">
+                        <div class="gcse-search"></div>
+                    </div>
+                
+                    <!-- Cargar el script de Google Custom Search -->
+                    <script async src="https://cse.google.com/cse.js?cx=7460304a63df240c5"></script>
+                </body>
+                </html>
+                
+                        </div>
+                    </div>
+                    <a class="nav-icon d-none d-lg-inline" href="#" data-bs-toggle="modal" data-bs-target="#templatemo_search">
+                        <i class="fa fa-fw fa-search text-dark mr-2"></i>
+                    </a>
+                    <a class="nav-icon position-relative text-decoration-none" href="#">
+                        <i class="fa fa-fw fa-cart-arrow-down text-dark mr-1"></i>
+                        <span class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark">7</span>
+                    </a>
+                    <a class="nav-icon position-relative text-decoration-none" href="#">
+                        <i class="fa fa-fw fa-user text-dark mr-3"></i>
+                        <span class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark">+99</span>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+    <!-- Close Header -->
+
+    <!-- Modal -->
+    <div class="modal fade bg-white" id="templatemo_search" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="w-100 pt-1 mb-5 text-right">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form action="" method="get" class="modal-content modal-body border-0 p-0">
+                <div class="input-group mb-2">
+                    <input type="text" class="form-control" id="inputModalSearch" name="q" placeholder="Search ...">
+                    <button type="submit" class="input-group-text bg-success text-light">
+                        <i class="fa fa-fw fa-search text-white"></i>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+
+    <!-- Start Banner Hero -->
+    <div id="template-mo-zay-hero-carousel" class="carousel slide" data-bs-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-bs-target="#template-mo-zay-hero-carousel" data-bs-slide-to="0" class="active"></li>
+            <li data-bs-target="#template-mo-zay-hero-carousel" data-bs-slide-to="1"></li>
+            <li data-bs-target="#template-mo-zay-hero-carousel" data-bs-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="container">
+                    <div class="row p-5">
+                        <div class="mx-auto col-md-8 col-lg-6 order-lg-last">
+                            <img class="img-fluid" src="imagenes teckluck/NIKE+DUNK+HI+RETRO.png" alt="">
+                        </div>
+                        <div class="col-lg-6 mb-0 d-flex align-items-center">
+                            <div class="text-align-left align-self-center">
+                                <h1 class="h1 text-success"><b>Luck</b> Tenis</h1>
+                                <h3 class="h2">TENEMOS UNA GRAN VARIEDAD DE TENIS</h3>
+                                <p>
+                                    El tenis es el deporte con muchos beneficios más allá de la salud y la actividad física. Promueve el trabajo en equipo y el espíritu deportivo. Mejora la coordinación, la agilidad y el equilibrio. Desarrolla el pensamiento estratégico y la resolución de problemas. Cultivar habilidades sociales y profundiza la confianza en uno mismo. 
+                                    esta pagina es 100% garantizada<a rel="sponsored" class="text-success" href="https://templatemo.com" target="_blank"></a>  
+                                    diseños de tenis. <a rel="sponsored" class="text-success" href="https://stories.freepik.com/" target="_blank"></a>
+                                    <a rel="sponsored" class="text-success" href="https://unsplash.com/" target="_blank"></a> 
+                                    <a rel="sponsored" class="text-success" href="https://icons8.com/" target="_blank"></a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="container">
+                    <div class="row p-5">
+                        <div class="mx-auto col-md-8 col-lg-6 order-lg-last">
+                            <img class="img-fluid" src="imagenes teckluck/71tdxN-NjLL-removebg-preview.png" alt="">
+                        </div>
+                        <div class="col-lg-6 mb-0 d-flex align-items-center">
+                            <div class="text-align-left">
+                                <h1 class="h1">Productos de aseo</h1>
+                                <h3 class="h2">Algunas cosas son utiles</h3>
+                                <p>
+                                    Para evitar el mal olor podemos recurrir, en líneas generales, a tres tipos de productos: desodorantes, antitranspirantes y desodorantes naturales. Los desodorantes reducen el olor matando las bacterias o enmascarando el olor que generan, pero no tienen un impacto en la cantidad de sudor que produce una persona.
+                                     <strong></strong> 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="container">
+                    <div class="row p-5">
+                        <div class="mx-auto col-md-8 col-lg-6 order-lg-last">
+                            <img class="img-fluid" src="imagenes teckluck/baby-removebg-preview.png" alt="">
+                        </div>
+                        <div class="col-lg-6 mb-0 d-flex align-items-center">
+                            <div class="text-align-left">
+                                <h1 class="h1">accesorio para bebes</h1>
+                                <h3 class="h2">productos recomendados </h3>
+                                <p>
+                                    Un pañal es una prenda interior absorbente usada para higienizar y evitar la contaminación del entorno a causa de los desperdicios de un organismo.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev text-decoration-none w-auto ps-3" href="#template-mo-zay-hero-carousel" role="button" data-bs-slide="prev">
+            <i class="fas fa-chevron-left"></i>
+        </a>
+        <a class="carousel-control-next text-decoration-none w-auto pe-3" href="#template-mo-zay-hero-carousel" role="button" data-bs-slide="next">
+            <i class="fas fa-chevron-right"></i>
+        </a>
+    </div>
+    <!-- End Banner Hero -->
+
+
+    <!-- Start Categories of The Month -->
+    <section class="container py-5">
+        <div class="row text-center pt-3">
+            <div class="col-lg-6 m-auto">
+                <h1 class="h1">CATEGORIAS DEL MES</h1>
+                <p>
+                   SON MATERIALES MAS RECOMENDADOS DEL MES 
+                   ANÍMATE, TEXLUCK TE OFRECE LAS MEJOR CALIDAD.
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-4 p-5 mt-3">
+                <a href="http://localhost/luckshop1/shop.html"><img src="imagenes teckluck/descarga-removebg-preview.png" class="rounded-circle img-fluid border"></a>
+                <h5 class="text-center mt-3 mb-3">RELOJES CASSIO</h5>
+                <p class="text-center"><a class="btn btn-success">140bs</a></p>
+            </div>
+            <div class="col-12 col-md-4 p-5 mt-3">
+                <a href="http://localhost/luckshop1/shop.html"><img src="imagenes teckluck/tenis nike.jpg" class="rounded-circle img-fluid border"></a>
+                <h2 class="h5 text-center mt-3 mb-3">NIKE</h2>
+                <p class="text-center"><a class="btn btn-success">300bs</a></p>
+            </div>
+            <div class="col-12 col-md-4 p-5 mt-3">
+                <a href="http://localhost/luckshop1/shop.html"><img src="imagenes teckluck/cadena.jpg" class="rounded-circle img-fluid border"></a>
+                <h2 class="h5 text-center mt-3 mb-3">ACCESORIOS</h2>
+                <p class="text-center"><a class="btn btn-success">50bs-170bs</a></p>
+            </div>
+        </div>
+    </section>
+    <!-- End Categories of The Month -->
+
+
+    <!-- Start Featured Product -->
+    <section class="bg-light">
+        <div class="container py-5">
+            <div class="row text-center py-3">
+                <div class="col-lg-6 m-auto">
+                    <h1 class="h1">PRODUCTOS</h1>
+                    <p>
+                        los productos que ofrecemos son de gran calidad, desde los mas grande hasta los mas pequeños de hogar  
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-4 mb-4">
+                    <div class="card h-100">
+                        <a href="shop-single.html">
+                            <img src="imagenes teckluck/gym.jfif" class="card-img-top" alt="...">
+                        </a>
+                        <div class="card-body">
+                            <ul class="list-unstyled d-flex justify-content-between">
+                                <li>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-muted fa fa-star"></i>
+                                    <i class="text-muted fa fa-star"></i>
+                                </li>
+                                <li class="text-muted text-right">45bs</li>
+                            </ul>
+                            <a href="shop-single.html" class="h2 text-decoration-none text-dark">acesorios para el GYM</a>
+                            <p class="card-text">
+                                Los productios que ofrecemos son muy garantizados y comodos para hacer ejerciciio y ademas de ser comodos te ayudan a perder grasa.
+                            </p>
+                            <p class="text-muted">RESEÑAS (24)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 mb-4">
+                    <div class="card h-100">
+                        <a href="shop-single.html">
+                            <img src="imagenes teckluck/OIP (1).jfif" class="card-img-top" alt="...">
+                        </a>
+                        <div class="card-body">
+                            <ul class="list-unstyled d-flex justify-content-between">
+                                <li>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-muted fa fa-star"></i>
+                                    <i class="text-muted fa fa-star"></i>
+                                </li>
+                                <li class="text-muted text-right">90bs </li>
+                            </ul>
+                            <a href="shop-single.html" class="h2 text-decoration-none text-dark">zapatos nike </a>
+                            <p class="card-text">
+                                los tenis Nike siguen siendo sinónimo de calidad, rendimiento y estilo. Utilizados por atletas y aficionados en todo el mundo, los modelos de Nike se han adaptado a las necesidades cambiantes del mercado
+                            </p>
+                            <p class="text-muted">RESEÑA (48)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 mb-4">
+                    <div class="card h-100">
+                        <a href="shop-single.html">
+                            <img src="imagenes teckluck/R.jfif" class="card-img-top" alt="...">
+                        </a>
+                        <div class="card-body">
+                            <ul class="list-unstyled d-flex justify-content-between">
+                                <li>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                </li>
+                                <li class="text-muted text-right">60bs</li>
+                            </ul>
+                            <a href="shop-single.html" class="h2 text-decoration-none text-dark">zapatos para el verano</a>
+                            <p class="card-text">
+                                El calzado de calidad es esencial para proteger tus pies y evitar problemas de salud. Un buen par de zapatos debe ser cómodo, adaptarse a la forma de tus pies y proporcionar un soporte adecuado a tus músculos y articulaciones
+                            <p class="text-muted">Reviews (74)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Featured Product -->
+
+
+    <!-- Start Footer -->
+    <footer class="bg-dark" id="tempaltemo_footer">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-4 pt-5">
+                    <h2 class="h2 text-success border-bottom pb-3 border-light logo">web texluck</h2>
+                    <ul class="list-unstyled text-light footer-link-list">
+                        <li>
+                            <i class="fas fa-map-marker-alt fa-fw"></i>
+                            La Paz-El ALto Av. Santa fe Zona 16 de Febrero 
+                        </li>
+                        <li>
+                            <i class="fa fa-phone fa-fw"></i>
+                            <a class="text-decoration-none" href="tel:010-020-0340">64120667</a>
+                        </li>
+                        <li>
+                            <i class="fa fa-envelope fa-fw"></i>
+                            <a class="text-decoration-none" href="https://mail.google.com/mail/u/0/?hl=es#inbox">sinfo3407@gmail.com</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4 pt-5">
+                    <h2 class="h2 text-light border-bottom pb-3 border-light">Productos</h2>
+                    <ul class="list-unstyled text-light footer-link-list">
+                        <li><a class="text-decoration-none" href="#">ACCESORIOS </a></li>
+                        <li><a class="text-decoration-none" href="#">ROPA DEPORTIVA</a></li>
+                        <li><a class="text-decoration-none" href="#">ZAPATOS PARA VARON</a></li>
+                        <li><a class="text-decoration-none" href="#">ZAPATOS PARA MUJER</a></li>
+                        <li><a class="text-decoration-none" href="#">ROPA POPULAR</a></li>
+                        <li><a class="text-decoration-none" href="#">ACCESORIOS PARA EL GYM</a></li>
+                        <li><a class="text-decoration-none" href="#">ZAPATILLAS DEPORTIVAS</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4 pt-5">
+                    <h2 class="h2 text-light border-bottom pb-3 border-light">MÁS INFORMACIÓN</h2>
+                    <ul class="list-unstyled text-light footer-link-list">
+                        <li><a class="text-decoration-none" href="#">SOBRE NOSOTROS</a></li>
+                        <li><a class="text-decoration-none" href="#">PREGUNTAS FRECUENTES </a></li>
+                        <li><a class="text-decoration-none" href="#">CONTACTO</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="row text-light mb-4">
+                <div class="col-12 mb-3">
+                    <div class="w-100 my-3 border-top border-light"></div>
+                </div>
+                <div class="col-auto me-auto">
+                    <ul class="list-inline text-left footer-icons">
+                        <li class="list-inline-item border border-light rounded-circle text-center">
+                            <a class="text-light text-decoration-none" target="_blank" href="https://www.facebook.com/profile.php?id=61565803711029"><i class="fab fa-facebook-f fa-lg fa-fw"></i></a>
+                        </li>
+                        <li class="list-inline-item border border-light rounded-circle text-center">
+                            <a class="text-light text-decoration-none" target="_blank" href="https://www.instagram.com/"><i class="fab fa-instagram fa-lg fa-fw"></i></a>
+                        </li>
+                        <li class="list-inline-item border border-light rounded-circle text-center">
+                            <a class="text-light text-decoration-none" target="_blank" href="https://twitter.com/"><i class="fab fa-twitter fa-lg fa-fw"></i></a>
+                        </li>
+                        <li class="list-inline-item border border-light rounded-circle text-center">
+                            <a class="text-light text-decoration-none" target="_blank" href="https://www.linkedin.com/"><i class="fab fa-linkedin fa-lg fa-fw"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-auto">
+                    <label class="sr-only" for="subscribeEmail">EMAIL</label>
+                    <div class="input-group mb-2">
+                        <input type="text" class="form-control bg-dark border-light" id="subscribeEmail" placeholder="Email address">
+                        <div class="input-group-text btn-success text-light">ESCRIBEMOS AL EMAIL</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="w-100 bg-black py-3">
+            <div class="container">
+                <div class="row pt-2">
+                    <div class="col-12">
+                        <p class="text-left text-light">
+                             &copy; 2024 
+                            | Designed by <a rel="sponsored" href="https://gamma.app/docs/Copy-of-Teckluck-La-Boutique-de-Ropa-Online-3hz4zbnyxzdee4a" target="_blank">Teckluck</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <!-- End Footer -->
+
+    <!-- Start Script -->
+    <script src="assets/js/jquery-1.11.0.min.js"></script>
+    <script src="assets/js/jquery-migrate-1.2.1.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/templatemo.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <!-- End Script -->
+</body>
+
+</html>
